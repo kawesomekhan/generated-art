@@ -10,6 +10,10 @@ body {
   left: 98px;
 }
 
+#main {
+  text-align: center; 
+}
+
 #main-content ul {
   list-style: none;
   margin: 0;
