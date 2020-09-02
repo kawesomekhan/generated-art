@@ -1,4 +1,4 @@
-var screenSize = 512;
+var screenSize = 256;
 var matWidth = 16;
 var subdivisions = 30;
 
