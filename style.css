@@ -3,3 +3,9 @@ body {
   margin: 100px auto;
   font-family: 'Barlow', sans-serif;
 }
+
+.header-container {
+  position: absolute;
+  top: 20px;
+  left: 98px;
+}
