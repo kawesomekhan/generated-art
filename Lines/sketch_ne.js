@@ -1,18 +1,14 @@
-
 var sketch = function (a) {
     a.screenSize = 256;
     a.matWidth = 16;
     a.subdivisions = 30;
 
-    a.setup = function() {
-        a.canvas = a.createCanvas(a.screenSize, a.screenSize);
-        a.canvas.parent('lines');
-        a.canvas.mousePressed(a.updateLines);
-        a.updateLines();
-        a.noCursor();
+    a.setup = function () {
+        a.canvas2 = a.createCanvas(a.screenSize, a.screenSize);
+        a.canvas2.parent('lines-ne');
     }
 
-    a.updateLines = function() {
+    a.mousePressed = function () {
         a.background(237, 226, 187);
 
         a.cellSize = (a.screenSize - (a.matWidth * 2)) / a.subdivisions;
@@ -24,7 +20,7 @@ var sketch = function (a) {
                 a.cellX = a.matWidth + a.cellSize * a.r + a.cellSize / 2;
                 a.cellY = a.matWidth + a.cellSize * a.c + a.cellSize / 2;
                 // Draw Line
-                if (a.random(1) > 0.5) {
+                if (a.random(1) > 0.9) {
                     a.line(a.cellX - a.cellSize / 2, a.cellY - a.cellSize / 2, a.cellX + a.cellSize / 2, a.cellY + a.cellSize / 2);
                 }
                 else {
@@ -35,5 +31,5 @@ var sketch = function (a) {
     }
 }
 
-var myLines = new p5(sketch);
+var myLinesNE = new p5(sketch);
 

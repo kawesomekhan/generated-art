@@ -11,24 +11,45 @@
 </head>
 <body>
 
-<div class="header-container">
+<div class="header-container" style="user-select: none">
   <h1>kk</h1>
-    <p class="paragraph">generated art</p>
+    <p class="paragraph">under construction</p>
 </div>
   
 <main id="main">
-  <section id="main-content" class="grid">
-    <ul>
-      <li>
+    <div class="grid" style="user-select: none">
         <div class="card">
-          <script src="Lines/sketch.js"></script>
-          <div class="card-content">
-            <p class="paragraph">lines</p>
-          </div>
+            <div class="card-content">
+                <div id="lines-nw">
+                    <script src="Lines/sketch-nw.js"></script>
+                </div>
+                <div class="description">
+                    <p class="paragraph">lines-nw</p>
+                </div>
+            </div>
         </div>
-      </li>
-    </ul>
-  </section>
+        <div class="card">
+            <div class="card-content">
+                <div id="lines">
+                    <script src="Lines/sketch.js"></script>
+                </div>
+                <div class="description">
+                    <p class="paragraph">lines</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div id="lines-ne">
+                    <script src="Lines/sketch-ne.js"></script>
+                </div>
+                <div class="description">
+                    <p class="paragraph">lines-ne</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 </body>
 </html>

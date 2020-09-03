@@ -1,7 +1,7 @@
 body {
-  max-width: 1040px;
   margin: 100px auto;
   font-family: 'Barlow', sans-serif;
+  padding: 98px;
 }
 
 .header-container {
@@ -10,12 +10,17 @@ body {
   left: 98px;
 }
 
-#main {
-  margin: 100px auto;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+    padding: 0;
 }
 
-#main-content ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.card {
+    margin: auto;
+    padding: 1em;
+}
+
+.card-content {
+    line-height: 0;
 }
