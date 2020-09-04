@@ -1,7 +1,7 @@
 body {
-  margin: 100px auto;
+  margin: 200px auto;
   font-family: 'Barlow', sans-serif;
-  padding: 98px;
+  padding: 0;
 }
 
 .header-container {
