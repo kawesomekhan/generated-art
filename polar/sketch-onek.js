@@ -12,7 +12,9 @@ var sketch = function(a) {
         a.canvas = a.createCanvas(a.canvasSize, a.canvasSize);
         a.canvas.parent('polar-onek');
         a.canvas.mousePressed(a.setPause);
+        a.canvas.touchStarted(a.setPause);
         a.canvas.mouseReleased(a.clearPause);
+        a.canvas.touchEnded(a.clearPause);
         a.tStepMax = 2 * a.PI;
         a.noCursor();
     }
