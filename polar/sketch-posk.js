@@ -19,7 +19,7 @@ var sketch = function (a) {
     }
 
     a.draw = function () {
-        if (a.shouldPause) {
+        if (a.shouldPause || a.mouseIsPressed) {
             return;
         }
         a.background(237, 226, 187);
